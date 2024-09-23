@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa 3 - Números al cubo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function cubo() {
+        if (
+          !isNaN(document.getElementById("num").value) &&
+          document.getElementById("num").value > 1
+        ) {
+          var naturales = parseInt(document.getElementById("num").value);
+          var resultado = "";
+          for (let i = 0, a = 2; i < naturales; i++, a += 2) {
+            resultado += `${a} al cubo es ${a * a * a} <br>`;
+          }
+          document.getElementById(
+            "out"
+          ).innerHTML = `Resultado: <br> ${resultado}`;
+        } else {
+          document.getElementById("out").innerHTML =
+            "Existe un error en el tipo de datos ingresados. <br> El valor debe ser numérico y mayor a 1.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>
+        Escribir un programa que muestre en pantalla los cinco primeros números
+        naturales pares elevados al cubo.
+      </h1>
+      <p>Ejemplo:</p>
+      <p>
+        2 al cubo es 8 <br />
+        4 al cubo es 64 <br />
+        6 al cubo es .. <br />
+        8 al cubo es .. <br />
+        100 al cubo es ..
+      </p>
+      <label for="num">Cantidad de números naturales pares:</label>
+      <input type="text" id="num" value="10" />
+      <br />
+      <input type="button" value="Encontrar los cubos" onclick="cubo()" />
+      <br />
+      <p id="out">Resultado:</p>
+    </div>
+  </body>
+</html>

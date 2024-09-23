@@ -1,0 +1,73 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #b1beff;
+  text-align: center;
+}
+
+div {
+  margin: 5vw;
+  padding: 5vw;
+  border-radius: 2vh;
+  background: #5bb4f8;
+}
+
+h1 {
+  margin: 4vh;
+  font-size: medium;
+}
+
+a {
+  background: #8e52ff;
+  border-radius: 1vh;
+  color: #fbfbff;
+  text-decoration: none;
+  padding: 1vh;
+  width: 30vw;
+  margin: 2vh;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 4vh;
+  font-weight: bold;
+}
+
+input[type="button"] {
+  background: #8e52ff;
+  border-radius: 1vh;
+  border: none;
+  color: #fbfbff;
+  text-decoration: none;
+  padding: 1vh;
+  width: 40vw;
+  margin: 2vh;
+  font-weight: bold;
+}
+input[type="text"] {
+  border: solid black 1px;
+  border-radius: 1vh;
+  padding: 1vh;
+  margin: 2vh;
+  outline: none;
+}
+
+label {
+  font-weight: bold;
+}
+p {
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #dac9fa;
+  color: #8e52ff;
+}
+
+input[type="button"]:hover {
+  background-color: #dac9fa;
+  color: #8e52ff;
+}

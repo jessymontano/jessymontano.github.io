@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa 4 - Fibonacci</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      function fibonacci() {
+        if (
+          !isNaN(document.getElementById("num").value) &&
+          document.getElementById("num").value >= 0
+        ) {
+          var limite = parseInt(document.getElementById("num").value);
+          var resultado = "";
+
+          for (let a = 0, b = 1, c = 0; c <= limite; c = a + b) {
+            resultado += `${c} <br />`;
+            a = b;
+            b = c;
+          }
+          document.getElementById(
+            "out"
+          ).innerHTML = `Resultado: <br /> ${resultado}`;
+        } else {
+          document.getElementById("out").innerHTML =
+            "Existe un error en el tipo de datos ingresados. <br> El valor debe ser numérico y mayor o igual a 0.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>Serie o Sucesión de Fibonacci, solicite el límite al usuario.</h1>
+      <p>
+        Fibonacci = 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610,
+        987
+      </p>
+      <label for="num">Límite:</label>
+      <input type="text" id="num" />
+      <input type="button" value="Calcular" onclick="fibonacci()" />
+      <p id="out">Resultado:</p>
+    </div>
+  </body>
+</html>

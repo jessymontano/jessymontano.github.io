@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arreglos 1</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      var elemento = 0;
+      function capturar() {
+        //agregamos los elementos de forma horizontal
+        var row = document.getElementById("renglon");
+        var valor = row.insertCell(-1);
+
+        //asignamos el valor al elemento
+        var row2 = document.getElementById("renglon2");
+        var valor2 = row2.insertCell(-1);
+
+        document.getElementById(
+          "arreglo"
+        ).innerHTML = `Capture el elemento [${elemento}]`;
+        valor.innerHTML = `[${elemento}]`;
+        valor2.innerHTML = document.getElementById("datos").value;
+
+        //agregamos los elementos de forma vertical
+        var columna = document.getElementById("tabla");
+        var renglonV2 = columna.insertRow(-1);
+        var valorV2 = renglonV2.insertCell(-1);
+        valorV2.innerHTML = `[${elemento}]`;
+        var renglonV = columna.insertRow(-1);
+        var valorV = renglonV2.insertCell(-1);
+        valorV.innerHTML = document.getElementById("datos").value;
+        elemento++;
+        if (elemento > 9) {
+          document.getElementById("datos").disabled = true;
+          document.getElementById("boton").disabled = true;
+        }
+      }
+      function reiniciar() {
+        elemento = 0;
+        document.getElementById(
+          "arreglo"
+        ).innerHTML = `Capture el elemento [0]`;
+        document.getElementById("datos").disabled = false;
+        document.getElementById("boton").disabled = false;
+        document.getElementById("renglon").innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>
+        Capture e imprima un arreglo de 10 elementos de tipo entero. El arreglo
+        se debe de imprimir de forma horizontal y vertical. Muestre el índice de
+        cada elemento. La captura de elementos se debe de cancelar al capturar
+        el último elemento. Incluya un botón de reinicio.
+      </h1>
+      <label for="elemento" id="arreglo">Capture el elemento [0]</label>
+      <input type="text" id="datos" />
+      <input type="button" id="boton" value="Capturar" onclick="capturar()" />
+      <input type="button" value="Reiniciar" onclick="reiniciar()" />
+      <table border="1">
+        <tr id="renglon"></tr>
+        <tr id="renglon2"></tr>
+      </table>
+      <br />
+      <table id="tabla" border="1"></table>
+    </div>
+  </body>
+</html>
