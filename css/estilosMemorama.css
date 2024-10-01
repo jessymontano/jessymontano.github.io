@@ -1,0 +1,40 @@
+body {
+  background: #c67dfe;
+}
+.imagen {
+  width: 120px;
+  height: 150px;
+}
+
+.imagen:hover {
+  filter: brightness(1.3);
+}
+
+table {
+  background-image: url("../img/fondo1.png");
+  background-size: cover;
+  display: inline-table;
+}
+
+h1 {
+  display: inline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(105, 0, 203);
+}
+
+input[type="button"] {
+  font-size: larger;
+  border: none;
+  border-radius: 2vh;
+  margin: 2vh;
+  padding: 1vh;
+  background-color: rgb(254, 234, 105);
+  color: blueviolet;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(252, 254, 241);
+}
+div {
+  text-align: center;
+}
