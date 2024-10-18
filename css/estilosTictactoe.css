@@ -1,0 +1,51 @@
+input[type="button"] {
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+}
+
+input[type="submit"] {
+  position: fixed;
+  top: 100px;
+  left: 800px;
+  font-size: 30px;
+}
+
+h1 {
+  position: fixed;
+  top: 20px;
+  left: 800px;
+}
+
+table {
+  position: relative;
+  border: none;
+  border-collapse: collapse;
+}
+
+tr {
+  position: relative;
+}
+td {
+  position: relative;
+}
+
+td:nth-child(1) {
+  border-left: none;
+  border-right: 5px solid black;
+}
+
+td:nth-child(2) {
+  border-left: none;
+  border-right: 5px solid black;
+}
+
+tr:nth-child(1) {
+  border-top: none;
+  border-bottom: 5px solid black;
+}
+
+tr:nth-child(2) {
+  border-top: none;
+  border-bottom: 5px solid black;
+}
