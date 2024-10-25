@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/funcionesPila.js"></script>
+    <link rel="stylesheet" href="/css/estilosPila.css" />
+    <title>Pilas</title>
+  </head>
+  <body onload="aleatorias()">
+    <h1>Pila genérica</h1>
+    <p>
+      Desarrolle una aplicación que muestre un objeto tipo pila, e implemente
+      los métodos push(), pop(), peek(), clear(), find(), isEmpty()
+    </p>
+    <label for="elemento">Elemento:</label>
+    <input type="text" id="elemento" onkeyup="cambioTexto()" />
+    <input
+      type="button"
+      value="push()"
+      id="push"
+      onclick="push(); aleatorias();"
+    />
+    <input type="button" value="pop()" id="pop" onclick="pop()" />
+    <input type="button" value="peek()" id="peek" onclick="peek()" />
+    <input type="button" value="clear()" id="clear" onclick="clear()" />
+    <input type="button" value="find()" id="find" onclick="find()" />
+    <input type="button" value="isEmpty()" id="empty" onclick="isEmpty()" />
+    <table>
+      <tbody id="tabla"></tbody>
+    </table>
+    <img src="./img/stack.jpeg" alt="Imagen de pila" />
+    <h3 id="mensaje"></h3>
+  </body>
+</html>
