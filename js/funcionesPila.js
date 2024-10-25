@@ -57,7 +57,7 @@ function pop() {
   var rt = document.getElementById("tabla");
   if (rt.hasChildNodes()) {
     document.getElementById(
-      "message"
+      "mensaje"
     ).innerHTML = `Se eliminó del tope ${rt.firstChild.childNodes[1].textContent}`;
     rt.removeChild(rt.firstChild);
     document.getElementById("tabla").firstChild.firstChild.textContent =
