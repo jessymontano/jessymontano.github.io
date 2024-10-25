@@ -1,233 +1,118 @@
-function _0x476b(_0x35edcc, _0x47117e) {
-  var _0x1a3771 = _0x1a37();
-  return (
-    (_0x476b = function (_0x476bc9, _0x908b26) {
-      _0x476bc9 = _0x476bc9 - 0xca;
-      var _0x5aca83 = _0x1a3771[_0x476bc9];
-      return _0x5aca83;
-    }),
-    _0x476b(_0x35edcc, _0x47117e)
-  );
-}
-function _0x1a37() {
-  var _0x1658e5 = [
-    "No\x20se\x20aceptan\x20cadenas\x20vacías",
-    "sol",
-    "tabla",
-    "tope->",
-    "No\x20hay\x20elementos\x20para\x20hacer\x20el\x20pop()",
-    "find",
-    "innerHTML",
-    "Se\x20hizo\x20clear\x20en\x20la\x20pila",
-    "find(",
-    "2062940XkEnZE",
-    "libro",
-    "getElementById",
-    "elemento",
-    "textContent",
-    "955MQaZPY",
-    "4338QIDPVO",
-    "mensaje",
-    "puente",
-    "firstChild",
-    "trim",
-    "random",
-    "true",
-    "Si\x20se\x20encuentra",
-    "length",
-    "push",
-    "2288944YFMotE",
-    "luz",
-    "fuego",
-    "16lkSvhl",
-    "Se\x20eliminó\x20del\x20tope\x20",
-    "childNodes",
-    "appendChild",
-    "border",
-    "1399779HaJymu",
-    "montaña",
-    "hasChildNodes",
-    "message",
-    "jardín",
-    "En\x20el\x20tope\x20de\x20la\x20pila\x20se\x20encuentra\x20",
-    "1px\x20solid\x20black",
-    "453400GthJUr",
-    "floor",
-    "No\x20se\x20encuentra",
-    "río",
-    "push(",
-    "arena",
-    "insertBefore",
-    "59863bGGDMQ",
-    "createElement",
-    "camino",
-    "guitarra",
-    "children",
-    "café",
-    "nube",
-    "117UjQEBo",
-    "value",
-    "10551300PVkVmE",
-  ];
-  _0x1a37 = function () {
-    return _0x1658e5;
-  };
-  return _0x1a37();
-}
-var _0x24a6d2 = _0x476b;
-(function (_0xa78c17, _0x273a1d) {
-  var _0x80b293 = _0x476b,
-    _0x9284ad = _0xa78c17();
-  while (!![]) {
-    try {
-      var _0x3ed050 =
-        (-parseInt(_0x80b293(0xdc)) / 0x1) *
-          (-parseInt(_0x80b293(0x102)) / 0x2) +
-        -parseInt(_0x80b293(0xce)) / 0x3 +
-        parseInt(_0x80b293(0xef)) / 0x4 +
-        (parseInt(_0x80b293(0xf4)) / 0x5) * (-parseInt(_0x80b293(0xf5)) / 0x6) +
-        parseInt(_0x80b293(0xff)) / 0x7 +
-        (-parseInt(_0x80b293(0xd5)) / 0x8) *
-          (-parseInt(_0x80b293(0xe3)) / 0x9) +
-        -parseInt(_0x80b293(0xe5)) / 0xa;
-      if (_0x3ed050 === _0x273a1d) break;
-      else _0x9284ad["push"](_0x9284ad["shift"]());
-    } catch (_0x45f6e6) {
-      _0x9284ad["push"](_0x9284ad["shift"]());
-    }
-  }
-})(_0x1a37, 0x614fe);
 const palabrasAleatorias = [
-  _0x24a6d2(0xe7),
-  _0x24a6d2(0xf0),
-  _0x24a6d2(0xe1),
-  _0x24a6d2(0xe2),
-  _0x24a6d2(0xdf),
+  "sol",
+  "libro",
+  "café",
+  "nube",
+  "guitarra",
   "ventana",
-  _0x24a6d2(0xde),
+  "camino",
   "sombra",
-  _0x24a6d2(0x101),
-  _0x24a6d2(0xcf),
-  _0x24a6d2(0xd8),
-  _0x24a6d2(0x100),
-  _0x24a6d2(0xd2),
-  _0x24a6d2(0xda),
-  _0x24a6d2(0xf7),
+  "fuego",
+  "montaña",
+  "río",
+  "luz",
+  "jardín",
+  "arena",
+  "puente",
 ];
+
 function aleatorias() {
-  var _0x3d439a = _0x24a6d2,
-    _0x559e37 = Math[_0x3d439a(0xd6)](
-      Math[_0x3d439a(0xfa)]() * palabrasAleatorias[_0x3d439a(0xfd)]
-    );
-  (document["getElementById"]("elemento")[_0x3d439a(0xe4)] =
-    palabrasAleatorias[_0x559e37]),
-    (document[_0x3d439a(0xf1)]("push")[_0x3d439a(0xe4)] =
-      _0x3d439a(0xd9) + palabrasAleatorias[_0x559e37] + ")"),
-    (document[_0x3d439a(0xf1)](_0x3d439a(0xeb))["value"] =
-      _0x3d439a(0xee) + palabrasAleatorias[_0x559e37] + ")");
+  var indice = Math.floor(Math.random() * palabrasAleatorias.length);
+  document.getElementById("elemento").value = palabrasAleatorias[indice];
+  document.getElementById("push").value = `push(${palabrasAleatorias[indice]})`;
+  document.getElementById("find").value = `find(${palabrasAleatorias[indice]})`;
 }
+
 function cambioTexto() {
-  var _0x21da7f = _0x24a6d2,
-    _0x5aecd3 = document[_0x21da7f(0xf1)](_0x21da7f(0xf2))["value"];
-  (document[_0x21da7f(0xf1)](_0x21da7f(0xfe))[_0x21da7f(0xe4)] =
-    _0x21da7f(0xd9) + _0x5aecd3 + ")"),
-    (document[_0x21da7f(0xf1)]("find")["value"] = "find(" + _0x5aecd3 + ")");
+  var texto = document.getElementById("elemento").value;
+  document.getElementById("push").value = `push(${texto})`;
+  document.getElementById("find").value = `find(${texto})`;
 }
+
 function push() {
-  var _0x37721e = _0x24a6d2;
-  if (
-    document["getElementById"](_0x37721e(0xf2))["value"][_0x37721e(0xf9)]() !=
-    ""
-  ) {
-    document[_0x37721e(0xf1)](_0x37721e(0xf6))[_0x37721e(0xec)] = "";
-    var _0x112682 = document[_0x37721e(0xdd)]("tr"),
-      _0x486bd0 = document[_0x37721e(0xdd)]("td"),
-      _0x51ce55 = document["createElement"]("td");
-    (_0x51ce55["style"][_0x37721e(0xcd)] = _0x37721e(0xd4)),
-      (_0x486bd0["textContent"] = _0x37721e(0xe9)),
-      (_0x51ce55["textContent"] = document[_0x37721e(0xf1)](_0x37721e(0xf2))[
-        _0x37721e(0xe4)
-      ]),
-      _0x112682["appendChild"](_0x486bd0),
-      _0x112682[_0x37721e(0xcc)](_0x51ce55);
-    var _0x5cc14a = document["getElementById"](_0x37721e(0xe8));
-    _0x5cc14a["hasChildNodes"]() &&
-      (document[_0x37721e(0xf1)](_0x37721e(0xe8))[_0x37721e(0xf8)][
-        _0x37721e(0xf8)
-      ][_0x37721e(0xf3)] = ""),
-      _0x5cc14a[_0x37721e(0xdb)](_0x112682, _0x5cc14a[_0x37721e(0xe0)][0x0]);
-  } else
-    document["getElementById"](_0x37721e(0xf6))["innerHTML"] = _0x37721e(0xe6);
+  if (document.getElementById("elemento").value.trim() != "") {
+    document.getElementById("mensaje").innerHTML = "";
+
+    var renglon = document.createElement("tr");
+    var celda1 = document.createElement("td");
+    var celda2 = document.createElement("td");
+    celda2.style.border = "1px solid black";
+    celda1.textContent = "tope->";
+    celda2.textContent = document.getElementById("elemento").value;
+    renglon.appendChild(celda1);
+    renglon.appendChild(celda2);
+    var rt = document.getElementById("tabla");
+
+    if (rt.hasChildNodes()) {
+      document.getElementById("tabla").firstChild.firstChild.textContent = "";
+    }
+    rt.insertBefore(renglon, rt.children[0]);
+  } else {
+    document.getElementById("mensaje").innerHTML =
+      "No se aceptan cadenas vacías";
+  }
 }
+
 function pop() {
-  var _0x14aa0f = _0x24a6d2,
-    _0x14ad66 = document[_0x14aa0f(0xf1)](_0x14aa0f(0xe8));
-  _0x14ad66[_0x14aa0f(0xd0)]()
-    ? ((document[_0x14aa0f(0xf1)](_0x14aa0f(0xd1))[_0x14aa0f(0xec)] =
-        _0x14aa0f(0xca) +
-        _0x14ad66[_0x14aa0f(0xf8)][_0x14aa0f(0xcb)][0x1][_0x14aa0f(0xf3)]),
-      _0x14ad66["removeChild"](_0x14ad66[_0x14aa0f(0xf8)]),
-      (document[_0x14aa0f(0xf1)]("tabla")[_0x14aa0f(0xf8)][_0x14aa0f(0xf8)][
-        _0x14aa0f(0xf3)
-      ] = "tope->"))
-    : (document[_0x14aa0f(0xf1)](_0x14aa0f(0xf6))["innerHTML"] =
-        _0x14aa0f(0xea));
+  var rt = document.getElementById("tabla");
+  if (rt.hasChildNodes()) {
+    document.getElementById(
+      "message"
+    ).innerHTML = `Se eliminó del tope ${rt.firstChild.childNodes[1].textContent}`;
+    rt.removeChild(rt.firstChild);
+    document.getElementById("tabla").firstChild.firstChild.textContent =
+      "tope->";
+  } else {
+    document.getElementById("mensaje").innerHTML =
+      "No hay elementos para hacer el pop()";
+  }
 }
+
 function peek() {
-  var _0x35a9ee = _0x24a6d2,
-    _0x178121 = document["getElementById"]("tabla");
-  _0x178121["hasChildNodes"]()
-    ? ((document[_0x35a9ee(0xf1)](_0x35a9ee(0xf6))[_0x35a9ee(0xec)] =
-        _0x35a9ee(0xd3) +
-        _0x178121["firstChild"][_0x35a9ee(0xcb)][0x1]["textContent"]),
-      (document[_0x35a9ee(0xf1)]("tabla")["firstChild"][_0x35a9ee(0xf8)][
-        _0x35a9ee(0xf3)
-      ] = _0x35a9ee(0xe9)))
-    : (document["getElementById"](_0x35a9ee(0xf6))[_0x35a9ee(0xec)] =
-        "No\x20hay\x20elementos\x20en\x20la\x20pila");
+  var rt = document.getElementById("tabla");
+  if (rt.hasChildNodes()) {
+    document.getElementById(
+      "mensaje"
+    ).innerHTML = `En el tope de la pila se encuentra ${rt.firstChild.childNodes[1].textContent}`;
+    document.getElementById("tabla").firstChild.firstChild.textContent =
+      "tope->";
+  } else {
+    document.getElementById("mensaje").innerHTML =
+      "No hay elementos en la pila";
+  }
 }
+
 function clear() {
-  var _0x51d507 = _0x24a6d2;
-  (document[_0x51d507(0xf1)](_0x51d507(0xe8))[_0x51d507(0xf3)] = ""),
-    (document["getElementById"](_0x51d507(0xf6))[_0x51d507(0xec)] =
-      _0x51d507(0xed));
+  document.getElementById("tabla").textContent = "";
+  document.getElementById("mensaje").innerHTML = "Se hizo clear en la pila";
 }
+
 function find() {
-  var _0x16e465 = _0x24a6d2,
-    _0x2f8857 = document[_0x16e465(0xf1)](_0x16e465(0xe8)),
-    _0x35ff15 = ![];
-  if (_0x2f8857[_0x16e465(0xd0)]()) {
-    for (
-      let _0x3aa16c = 0x0;
-      _0x3aa16c < _0x2f8857["childNodes"][_0x16e465(0xfd)];
-      _0x3aa16c++
-    ) {
-      let _0x47df36 =
-        _0x2f8857[_0x16e465(0xcb)][_0x3aa16c]["childNodes"][0x1][
-          _0x16e465(0xf3)
-        ];
-      if (
-        _0x47df36 ==
-        document["getElementById"](_0x16e465(0xf2))[_0x16e465(0xe4)]
-      ) {
-        (document[_0x16e465(0xf1)](_0x16e465(0xf6))[_0x16e465(0xec)] =
-          _0x16e465(0xfc)),
-          (_0x35ff15 = !![]);
+  var rt = document.getElementById("tabla");
+  var control = false;
+  if (rt.hasChildNodes()) {
+    for (let i = 0; i < rt.childNodes.length; i++) {
+      let nodo = rt.childNodes[i].childNodes[1].textContent;
+      if (nodo == document.getElementById("elemento").value) {
+        document.getElementById("mensaje").innerHTML = "Si se encuentra";
+        control = true;
         break;
       }
     }
-    !_0x35ff15 &&
-      (document[_0x16e465(0xf1)](_0x16e465(0xf6))[_0x16e465(0xec)] =
-        _0x16e465(0xd7));
-  } else
-    document[_0x16e465(0xf1)](_0x16e465(0xf6))[_0x16e465(0xec)] =
-      "No\x20hay\x20elementos\x20en\x20la\x20pila";
+    if (!control) {
+      document.getElementById("mensaje").innerHTML = "No se encuentra";
+    }
+  } else {
+    document.getElementById("mensaje").innerHTML =
+      "No hay elementos en la pila";
+  }
 }
+
 function isEmpty() {
-  var _0x36b406 = _0x24a6d2,
-    _0x4b2cf7 = document[_0x36b406(0xf1)](_0x36b406(0xe8));
-  _0x4b2cf7[_0x36b406(0xd0)]()
-    ? (document["getElementById"](_0x36b406(0xf6))["innerHTML"] =
-        _0x36b406(0xfb))
-    : (document[_0x36b406(0xf1)](_0x36b406(0xf6))[_0x36b406(0xec)] = "false");
+  var rt = document.getElementById("tabla");
+  if (rt.hasChildNodes()) {
+    document.getElementById("mensaje").innerHTML = "true";
+  } else {
+    document.getElementById("mensaje").innerHTML = "false";
+  }
 }
