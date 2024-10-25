@@ -83,7 +83,7 @@ function peek() {
 }
 
 function clear() {
-  document.getElementById("tabla").textContent = "";
+  document.getElementById("tabla").innerHTML = "";
   document.getElementById("mensaje").innerHTML = "Se hizo clear en la pila";
 }
 
