@@ -32,6 +32,7 @@ ul {
 }
 
 li {
+  text-align: start;
   margin: 4vh;
   font-weight: bold;
 }
