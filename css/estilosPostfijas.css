@@ -1,33 +1,27 @@
-table,
-tr,
-td {
+#pasos {
+  position: fixed;
+  top: 30%;
+  left: 70%;
+}
+p {
+  font-weight: bold;
+}
+
+table {
   border-collapse: collapse;
 }
 
-#mensaje {
-  position: fixed;
-  top: 70%;
-  left: 75%;
-  color: red;
+input[type="text"] {
+  width: 750px;
+  font-weight: bolder;
+  font-size: 1.8em;
 }
 
-input[type="button"] {
-  background: #8e52ff;
-  border-radius: 1vh;
-  border: none;
-  color: #fbfbff;
-  text-decoration: none;
-  padding: 1vh;
-  width: 40vw;
-  margin: 2vh;
-  font-weight: bold;
-}
-input[type="text"] {
-  border: solid black 1px;
-  border-radius: 1vh;
-  padding: 1vh;
-  margin: 2vh;
-  outline: none;
+div {
+  margin: 5vw;
+  padding: 5vw;
+  border-radius: 2vh;
+  background: #5bb4f8;
 }
 
 a {
@@ -40,12 +34,6 @@ a {
   margin: 2vh;
   font-weight: bold;
 }
-div {
-  margin: 3vw;
-  padding: 3vw;
-  border-radius: 2vh;
-  background: #5bb4f8;
-}
 a:hover {
   background-color: #dac9fa;
   color: #8e52ff;
@@ -55,7 +43,16 @@ input[type="button"]:hover {
   background-color: #dac9fa;
   color: #8e52ff;
 }
-p {
+
+input[type="button"] {
+  background: #8e52ff;
+  border-radius: 1vh;
+  border: none;
+  color: #fbfbff;
+  text-decoration: none;
+  padding: 1vh;
+  width: 40vw;
+  margin: 2vh;
   font-weight: bold;
 }
 body {

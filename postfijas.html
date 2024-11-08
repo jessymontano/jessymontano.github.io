@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expresiones postfijas</title>
+    <link rel="stylesheet" href="/css/estilosPostfijas.css" />
+    <script src="/js/funcionesPostfijas.js"></script>
+  </head>
+  <body>
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>Evaluación de expresión postfija</h1>
+      Expresión:
+      <input type="text" name="" id="exp" value="3 4 * 2 5 + - 4 * 2 /" />
+      <input type="button" id="botonEval" value="Evaluar" onclick="evaluar()" />
+      <input
+        type="button"
+        id="botonPasos"
+        value="Paso a paso"
+        onclick="pasoAPaso()"
+      />
+      <input
+        type="button"
+        id="botonReinicio"
+        value="Reiniciar"
+        onclick="reiniciar()"
+      />
+      <p id="resultado">Resultado:</p>
+      <table>
+        <tbody id="tabla"></tbody>
+      </table>
+      <p id="pasos">Pasos: <br /></p>
+    </div>
+  </body>
+</html>
