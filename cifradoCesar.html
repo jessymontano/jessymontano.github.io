@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilosCifrado.css" />
+    <script src="/js/funcionesCifrado.js"></script>
+    <title>Cifrado de César</title>
+  </head>
+
+  <body onload="optionKey()">
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>Algoritmo de cifrado de César</h1>
+      <label for="originalMessage">Mensaje (Solo mayúsculas):</label>
+      <textarea
+        id="originalMessage"
+        rows="20"
+        onkeydown="allows(event)"
+        onkeyup="capital(this)"
+      ></textarea>
+      <br />
+      <p>Key:</p>
+      <select id="key1"></select>
+      <select id="key2"></select>
+      <select id="key3"></select>
+      <select id="key4"></select>
+      <select id="key5"></select>
+      <select id="key6"></select>
+      <br />
+      <input type="button" value="Ejemplo 1" onclick="example1()" />
+      <input type="button" value="Ejemplo 2" onclick="example2()" />
+      <input type="button" value="Limpiar" onclick="clearAll()" />
+      <input type="button" value="Encriptar" onclick="encrypt()" />
+      <input type="button" value="Guardar multiclave" onclick="saveKey()" />
+      <input
+        type="button"
+        value="Guardar texto encriptado"
+        onclick="saveMessage()"
+      />
+      <br />
+      <p>Mensaje encriptado:</p>
+      <textarea id="encryptedMessage" rows="20" readonly></textarea>
+    </div>
+  </body>
+</html>
