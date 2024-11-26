@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilosCifrado.css" />
+    <script src="/js/funcionesDesencriptar.js"></script>
+    <title>Descifrado de César</title>
+  </head>
+  <body onload="load()">
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>Algoritmo de cifrado de César</h1>
+      <label for="encryptedMessage">Mensaje encriptado</label>
+      <textarea id="encryptedMessage" rows="20" readonly></textarea>
+      <br />
+      <p>Key:</p>
+      <select id="key1" disabled>
+        <option value="">--</option>
+      </select>
+      <select id="key2" disabled>
+        <option value="">--</option>
+      </select>
+      <select id="key3" disabled>
+        <option value="">--</option>
+      </select>
+      <select id="key4" disabled>
+        <option value="">--</option>
+      </select>
+      <select id="key5" disabled>
+        <option value="">--</option>
+      </select>
+      <select id="key6" disabled>
+        <option value="">--</option>
+      </select>
+      <br />
+
+      <input type="button" value="Limpiar" onclick="clearAll()" />
+      <input type="file" id="keyFile" accept=".txt" />
+      <input
+        type="button"
+        value="Cargar clave"
+        onclick="document.getElementById('keyFile').click()"
+      />
+      <input type="file" id="encryptedFile" accept=".txt" />
+      <input
+        type="button"
+        value="Cargar mensaje encriptado"
+        onclick="document.getElementById('encryptedFile').click()"
+      />
+      <input type="button" value="Desencriptar" onclick="decrypt()" />
+      <input
+        type="button"
+        value="Guardar texto desencriptado"
+        onclick="saveMessage()"
+      />
+      <br />
+      <p>Mensaje original:</p>
+      <textarea id="originalMessage" rows="20"></textarea>
+    </div>
+  </body>
+</html>

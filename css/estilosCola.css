@@ -69,6 +69,24 @@ input[type="button"]:hover {
   color: #8e52ff;
 }
 
-input[type="file"] {
-  display: none;
+table,
+tr,
+td {
+  border-collapse: collapse;
+}
+
+div#contenedor-tabla {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#mensaje {
+  position: fixed;
+  top: 70%;
+  left: 75%;
+  color: red;
+}
+
+img {
+  display: inline-table;
 }

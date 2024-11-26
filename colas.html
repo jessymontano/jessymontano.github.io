@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilosCola.css" />
+    <script src="/js/funcionesCola.js"></script>
+    <title>Queues (Colas)</title>
+  </head>
+  <body onload="aleatorias()">
+    <div>
+      <a href="/index.html">Regresar al menú</a>
+      <h1>Cola Genérica</h1>
+      <p>
+        Desarrolle una aplicación que muestre un objeto tipo cola (queue) e
+        implemente los métodos: enqueue, dequeue, front, clear, find, isEmpty
+      </p>
+      <label for="elemento">Elemento:</label>
+      <input type="text" id="elemento" onkeyup="cambioTexto()" />
+      <br />
+      <input
+        type="button"
+        value="enqueue()"
+        id="enqueue"
+        onclick="enqueue(); aleatorias();"
+      />
+
+      <input type="button" value="dequeue()" onclick="dequeue()" />
+      <input type="button" value="front()" id="front" onclick="front()" />
+      <input type="button" value="clear()" onclick="clear()" />
+      <input type="button" value="find()" id="find" onclick="find()" />
+      <input type="button" value="isEmpty()" onclick="isEmpty()" />
+      <div id="contenedor-tabla">
+        <table>
+          <tbody id="tabla"></tbody>
+        </table>
+      </div>
+
+      <p id="mensaje"></p>
+
+      <img src="/img/cola.png" alt="queue" />
+    </div>
+  </body>
+</html>
