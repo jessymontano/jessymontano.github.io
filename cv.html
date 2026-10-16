@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      data-i18n-attr="content:meta.description"
+      name="description"
+      content="Portafolio de Jessica Montaño, desarrolladora Full Stack con C#/.NET, React y Angular"
+    />
+    <title>Jessica Montaño Lares | Desarrolladora Full Stack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="./script.js" defer></script>
+    <script>
+      try {
+        const saved = localStorage.getItem("theme");
+        document.documentElement.dataset.theme =
+          saved ??
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="side">
+        <aside>
+          <h1>Jessica Montaño Lares</h1>
+          <p data-i18n="sidebar.role" class="role">Desarrolladora Full Stack</p>
+          <hr />
+          <ul class="contact">
+            <li class="contact-item">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <span data-i18n="sidebar.email" class="label">Correo</span>
+                <a href="mailto:jessymontano@hotmail.com"
+                  >jessymontano@hotmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <span class="label">CV</span>
+                <a
+                  id="cv-link"
+                  data-i18n="sidebar.cv"
+                  href="cv.pdf"
+                  download="Jessica_Montaño_CV.pdf"
+                  >Descargar CV</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="social">
+            <a
+              href="https://github.com/jessymontano"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128 128"
+              >
+                <g fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                  />
+                  <path
+                    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/jessymontano"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128 128"
+              >
+                <path
+                  d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"
+                />
+              </svg>
+            </a>
+          </div>
+        </aside>
+        <div class="toggles">
+          <button
+            id="theme-toggle"
+            class="toggle-btn"
+            type="button"
+            aria-label="Cambiar a modo oscuro"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              />
+            </svg>
+          </button>
+
+          <button
+            id="lang-toggle"
+            class="toggle-btn"
+            type="button"
+            lang="en"
+            aria-label="Switch to English"
+          >
+            EN
+          </button>
+        </div>
+      </div>
+      <main>
+        <nav>
+          <div class="tabs" role="tablist">
+            <button
+              data-i18n="tab.profile"
+              aria-selected="true"
+              aria-controls="about"
+              class="tablink"
+              role="tab"
+              id="defaultTab"
+            >
+              Perfil
+            </button>
+            <button
+              data-i18n="tab.experience"
+              aria-selected="false"
+              aria-controls="experience"
+              class="tablink"
+              role="tab"
+            >
+              Experiencia
+            </button>
+            <button
+              data-i18n="tab.projects"
+              aria-selected="false"
+              aria-controls="projects"
+              class="tablink"
+              role="tab"
+            >
+              Proyectos
+            </button>
+          </div>
+        </nav>
+        <section id="about" class="tabcontent" role="tabpanel">
+          <h2 data-i18n="profile.title">Perfil</h2>
+          <p data-i18n="profile.desc">
+            Ingeniera en Sistemas de Información en proceso de titulación con
+            experiencia como líder de desarrollo y desarrolladora full stack. He
+            diseñado arquitecturas modulares multi-tenant y construido APIs REST
+            con C#/.NET, además de interfaces responsivas con React, Angular y
+            TypeScript, guiadas por prototipos UI/UX en Figma. Cuento con
+            experiencia en CI/CD y despliegue con Docker en servidores Linux.
+          </p>
+          <h3 data-i18n="profile.skill.title">Habilidades</h3>
+          <div class="skill-grid">
+            <div class="card">
+              <h4 data-i18n="profile.skill.languages">Lenguajes</h4>
+              <div class="skill-icons">
+                <div class="skill-icon">
+                  <img src="./img/icons/csharp-original.svg" alt="C#" />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/typescript-original.svg"
+                    alt="TypeScript"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/java-original.svg" alt="Java" />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/javascript-original.svg"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/dart-original.svg" alt="Dart" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/html5-original.svg" alt="HTML 5" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/css3-original.svg" alt="CSS 3" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Frontend</h4>
+              <div class="skill-icons">
+                <div class="skill-icon">
+                  <img src="./img/icons/react-original.svg" alt="React" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/angular-original.svg" alt="Angular" />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/tailwindcss-original.svg"
+                    alt="Tailwind CSS"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/nextjs-original.svg" alt="Next.js" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/flutter-original.svg" alt="Flutter" />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/bootstrap-original.svg"
+                    alt="Bootstrap"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4>Backend</h4>
+              <div class="skill-icons">
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/dotnetcore-original.svg"
+                    alt=".NET Core"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/spring-original.svg"
+                    alt="Spring Boot"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/express-original.svg"
+                    alt="Express.js"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/postgresql-original.svg"
+                    alt="PostgreSQL"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/entityframeworkcore-original.svg"
+                    alt="Entity Framework Core"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/mysql-original.svg" alt="MySQL" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/mongodb-original.svg" alt="MongoDB" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h4 data-i18n="profile.skill.tools">Herramientas</h4>
+              <div class="skill-icons">
+                <div class="skill-icon">
+                  <img src="./img/icons/linux-original.svg" alt="Linux" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/docker-original.svg" alt="Docker" />
+                </div>
+                <div class="skill-icon">
+                  <img
+                    src="./img/icons/githubactions-original.svg"
+                    alt="GitHub Actions"
+                  />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/git-original.svg" alt="Git" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/figma-original.svg" alt="Figma" />
+                </div>
+                <div class="skill-icon">
+                  <img src="./img/icons/jira-original.svg" alt="Jira" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experience" class="tabcontent" role="tabpanel">
+          <h2 data-i18n="experience.title">Experiencia</h2>
+          <ol class="timeline">
+            <li>
+              <h3 data-i18n="experience.hook.title">
+                Líder de Desarrollo y Desarrolladora Full Stack
+              </h3>
+              <p data-i18n="experience.hook.company" class="company">
+                Hook Technologies Solutions · Prácticas profesionales
+              </p>
+              <p class="period">
+                <time data-i18n="experience.hook.start" datetime="2026-07"
+                  >Julio 2026</time
+                >
+                -
+                <time data-i18n="experience.hook.end" datetime="2026-10"
+                  >Octubre 2026</time
+                >
+              </p>
+              <ul class="achievements">
+                <li data-i18n="experience.hook1">
+                  Lideré a un equipo de 5 practicantes en el desarrollo de una
+                  plataforma SaaS multi-tenant de administración, punto de
+                  venta, inventario y gestión de tickets de reparación.
+                </li>
+                <li data-i18n="experience.hook2">
+                  Levanté requerimientos con el cliente, diseñé la arquitectura
+                  (monolito modular con Clean Architecture) y planifiqué el
+                  desarrollo en Jira.
+                </li>
+                <li data-i18n="experience.hook3">
+                  Diseñé prototipos UI/UX en Figma y desarrollé el frontend con
+                  Angular, TypeScript y Tailwind CSS (vistas responsivas e
+                  integración con la API).
+                </li>
+                <li data-i18n="experience.hook4">
+                  Desarrollé el backend con C#, .NET, Entity Framework Core y
+                  PostgreSQL: API REST con autenticación JWT con refresh tokens,
+                  roles personalizados con permisos granulares y módulos de
+                  catálogos e inventario (órdenes de compra, GRNs y RMAs).
+                </li>
+              </ul>
+              <ul class="skill-badges">
+                <li class="badge">.NET</li>
+                <li class="badge">Angular</li>
+                <li class="badge">PostgreSQL</li>
+              </ul>
+            </li>
+            <li>
+              <h3 data-i18n="experience.siscomat.title">
+                Desarrolladora Full Stack
+              </h3>
+              <p data-i18n="experience.siscomat.company" class="company">
+                Departamento de Matemáticas, Universidad de Sonora · Servicio
+                social
+              </p>
+              <p class="period">
+                <time data-i18n="experience.siscomat.start" datetime="2025-09"
+                  >Septiembre 2025</time
+                >
+                -
+                <time data-i18n="experience.siscomat.end" datetime="2026-05"
+                  >Mayo 2026</time
+                >
+              </p>
+              <ul class="achievements">
+                <li data-i18n="experience.siscomat1">
+                  Desarrollé, junto con dos compañeros, SISCOMAT, un sistema web
+                  para generar de forma automatizada las constancias de la
+                  Semana Nacional de Investigación y Docencia en Matemáticas.
+                </li>
+                <li data-i18n="experience.siscomat2">
+                  Diseñé la arquitectura de la solución y los prototipos de la
+                  interfaz en Figma.
+                </li>
+                <li data-i18n="experience.siscomat3">
+                  Desarrollé el frontend con React, TypeScript y Tailwind CSS, y
+                  el backend con C# .NET y PostgreSQL.
+                </li>
+                <li data-i18n="experience.siscomat4">
+                  Implementé CI/CD con GitHub Actions y desplegué el entorno de
+                  producción con contenedores Docker en un servidor Linux.
+                </li>
+              </ul>
+              <ul class="skill-badges">
+                <li class="badge">.NET</li>
+                <li class="badge">React</li>
+                <li class="badge">PostgreSQL</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+        <section id="projects" class="tabcontent" role="tabpanel">
+          <h2 data-i18n="projects.title">Proyectos</h2>
+          <div class="project-grid">
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas del sistema de inventario"
+                data-i18n-attr="aria-label:inv.gallery"
+              >
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/invlogin.jpg"
+                  alt="Pantalla de login del sistema de inventario"
+                  data-i18n-attr="alt:inv.img1"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/invdash.jpg"
+                  alt="Pantalla principal"
+                  data-i18n-attr="alt:inv.img2"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/invalm.jpg"
+                  alt="Pantalla de gestión de almacenes"
+                  data-i18n-attr="alt:inv.img3"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/invprod.jpg"
+                  alt="Pantalla de gestión de productos"
+                  data-i18n-attr="alt:inv.img4"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Java</li>
+                  <li class="badge">JavaFX</li>
+                  <li class="badge">JUnit</li>
+                  <li class="badge">SQLite</li>
+                </ul>
+                <h3 data-i18n="inv.title">Sistema de gestión de inventario</h3>
+
+                <p data-i18n="inv.desc">
+                  Proyecto de reingeniería y mantenimiento de un sistema de
+                  gestión de inventario. Realizado para la materia de
+                  Administración de Proyectos Informáticos II.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/proyecto-inventario"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio del proyecto de inventario"
+                    data-i18n-attr="aria-label:inv.link"
+                    data-i18n="repository"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas de la app TicTacToe"
+                data-i18n-attr="aria-label:tic.gallery"
+              >
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoestart.jpeg"
+                  alt="inicio de la app TicTacToe"
+                  data-i18n-attr="alt:tic.img1"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoelogin.jpeg"
+                  alt="modal para iniciar sesión"
+                  data-i18n-attr="alt:tic.img2"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoematchmaking.jpeg"
+                  alt="sala de juego esperando al segundo jugador"
+                  data-i18n-attr="alt:tic.img3"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoematch.jpeg"
+                  alt="partida de TicTacToe"
+                  data-i18n-attr="alt:tic.img4"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoevictory.jpeg"
+                  alt="victoria tras finalizar una partida"
+                  data-i18n-attr="alt:tic.img5"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoehistory.jpeg"
+                  alt="historial de partidas"
+                  data-i18n-attr="alt:tic.img6"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/tictactoeleaderboard.jpeg"
+                  alt="clasificación de top 10 jugadores"
+                  data-i18n-attr="alt:tic.img7"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Flutter</li>
+                  <li class="badge">Firebase Authentication</li>
+                  <li class="badge">Firestore</li>
+                </ul>
+                <h3>TicTacToe</h3>
+
+                <p data-i18n="tic.desc">
+                  Aplicación desarrollada en Flutter que permite jugar Tic Tac
+                  Toe en línea en tiempo real con hasta tres modos de juego.
+                  Desarrollada para la materia de Prácticas de Desarrollo de
+                  Sistemas III.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/tictactoe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio del proyecto de TicTacToe"
+                    data-i18n-attr="aria-label:tic.link"
+                    data-i18n="repository"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas de la app de trivia"
+                data-i18n-attr="aria-label:trivia.gallery"
+              >
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/triviastart.jpeg"
+                  alt="Pantalla de inicio"
+                  data-i18n-attr="alt:trivia.img1"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/triviaquestion.jpeg"
+                  alt="pregunta antes de responder"
+                  data-i18n-attr="alt:trivia.img2"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/triviaquestionanswered.jpeg"
+                  alt="pregunta tras seleccionar una respuesta"
+                  data-i18n-attr="alt:trivia.img3"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/triviaresults.jpeg"
+                  alt="resultados"
+                  data-i18n-attr="alt:trivia.img4"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Flutter</li>
+                </ul>
+                <h3 data-i18n="trivia.title">App de trivia</h3>
+
+                <p data-i18n="trivia.desc">
+                  Aplicación móvil desarrollada en Flutter que permite a los
+                  usuarios, responder preguntas tipo trivia con límite,
+                  acumulando puntuación según las respuestas correctas. La
+                  aplicación incluye efectos visuales dinámicos, temporizador
+                  interactivo y una pantalla de resultados al finalizar la
+                  trivia.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/trivia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio del proyecto de app de trivia"
+                    data-i18n-attr="aria-label:trivia.link"
+                    data-i18n="repository"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas de Invictus"
+                data-i18n-attr="aria-label:invic.gallery"
+              >
+                <img
+                  src="./img/invictus.png"
+                  height="400"
+                  loading="lazy"
+                  alt="Pantalla principal de invictus"
+                  data-i18n-attr="alt:invic.img1"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Express.js</li>
+                  <li class="badge">MongoDB</li>
+                </ul>
+                <h3>Invictus</h3>
+                <p data-i18n="invic.desc">
+                  Sistema de gestión de inventario de reactivos químicos para el
+                  Departamento de Investigaciones Científicas y Tecnológicas de
+                  la Universidad de Sonora. Me encargué de desarrollar el API y
+                  de la base de datos.
+                </p>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Java</li>
+                  <li class="badge">Spring Boot</li>
+                  <li class="badge">Java Swing</li>
+                  <li class="badge">MySQL</li>
+                </ul>
+                <h3>SIPRE</h3>
+                <p data-i18n="sipre.desc">
+                  Sistema de gestión de inventario de formatos para títulos de
+                  propiedades. Realizado para la materia Práctica de Desarrollo
+                  I.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/SISTEMA-SIPRE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio del frontend de SIPRE"
+                    data-i18n-attr="aria-label:sipre.link1.aria"
+                    data-i18n="sipre.link1"
+                    >Repositorio del frontend</a
+                  >
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/sipre-backend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio del backend de SIPRE"
+                    data-i18n-attr="aria-label:sipre.link2.aria"
+                    data-i18n="sipre.link2"
+                    >Repositorio del backend</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas del sistema spotipagina"
+                data-i18n-attr="aria-label:spot.gallery"
+              >
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/spotiplaylists.png"
+                  alt="lista de playlists"
+                  data-i18n-attr="alt:spot.img1"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/spotisort.png"
+                  alt="playlist seleccionada y opción para ordenar por fecha"
+                  data-i18n-attr="alt:spot.img2"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/spotijuzgar.png"
+                  alt="primera canción de una playlist con opción para mantener o eliminar"
+                  data-i18n-attr="alt:spot.img3"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Next.js</li>
+                  <li class="badge">React</li>
+                  <li class="badge">Spotify API</li>
+                </ul>
+                <h3>Spotipagina</h3>
+
+                <p data-i18n="spot.desc">
+                  Aplicación web que permite a los usuarios ingresar con su
+                  cuenta de Spotify para ordenar playlists por fecha y recorrer
+                  playlists con la opción de mantener o eliminar canciones.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/spotipagina"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio de spotipagina"
+                    data-i18n-attr="aria-label:spot.link"
+                    data-i18n="repository"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas del mod wili's pikmins"
+                data-i18n-attr="aria-label:pikmin.gallery"
+              >
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/pikmins.png"
+                  alt="tres tipos de pikmin dentro del juego"
+                  data-i18n-attr="alt:pikmin.img1"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/buriedpikmins.png"
+                  alt="pikmins rojos enterrados"
+                  data-i18n-attr="alt:pikmin.img2"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/nectareggs.png"
+                  alt="huevos de néctar"
+                  data-i18n-attr="alt:pikmin.img3"
+                />
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/onion.png"
+                  alt="cebolla roja"
+                  data-i18n-attr="alt:pikmin.img4"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Java</li>
+                  <li class="badge">Blockbench</li>
+                  <li class="badge">NeoForge</li>
+                </ul>
+                <h3>Wili's Pikmins</h3>
+
+                <p data-i18n="pikmin.desc">
+                  Mod de minecraft desarrollado para NeoForge 1.21.1 que agrega
+                  entidades y mecánicas inspiradas en Pikmin.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/WilisPikmins"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio de Wili's Pikmins"
+                    data-i18n-attr="aria-label:pikmin.link"
+                    data-i18n="repository"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div
+                class="carousel"
+                role="region"
+                tabindex="0"
+                aria-label="Capturas del mod Wiwi's Mega Trees"
+                data-i18n-attr="aria-label:tree.gallery"
+              >
+                <img
+                  height="400"
+                  loading="lazy"
+                  src="./img/megatrees.png"
+                  alt="versión mega de los árboles de roble, abedul, acacia, cerezo y manglar"
+                  data-i18n-attr="alt:tree.img1"
+                />
+              </div>
+              <div class="project-body">
+                <ul class="skill-badges">
+                  <li class="badge">Java</li>
+                  <li class="badge">Fabric</li>
+                  <li class="badge">NeoForge</li>
+                  <li class="badge">Forge</li>
+                </ul>
+                <h3>Wiwi's Mega Trees</h3>
+
+                <p data-i18n="tree.desc">
+                  Mod de minecraft multiloader y multiversión que agrega
+                  variantes "mega" para los tipos de árbol que no tienen.
+                  Permite a los jugadores crecer árboles mega plantando sus
+                  retoños en formación 2x2.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="btn"
+                    href="https://github.com/jessymontano/WiwisMegaTrees"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio de Wiwi's Mega Trees"
+                    data-i18n-attr="aria-label:tree.link"
+                    data-i18n="repository"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
